@@ -1,0 +1,16 @@
+ion-content {
+    ion-item.hero-item {
+        cursor: pointer;
+    }
+
+    div.error-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        ion-text.error-text {
+            text-align: center;
+        }
+    }
+}

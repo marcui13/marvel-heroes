@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Marvel Heroes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- datos cargados correctamente  -->
+  <ion-list *ngIf="loadedData && !errorData">
+    <ion-item *ngFor="let hero of heroes" (click)="navigateToHeroDetails(hero)" class="hero-item">
+      <ion-thumbnail slot="start">
+        <img [src]="hero.thumbnail?.path + '/standard_small.' + hero.thumbnail?.extension" alt="{{hero.name}}">
+      </ion-thumbnail>
+      <ion-label>
+        {{ hero.name }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- error al cargar los datos  -->
+  <div *ngIf="loadedData && errorData" class="error-text-container">
+    <ion-text class="error-text">
+      Hubo un error al cargar los datos, por favor intente en unos minutos.
+    </ion-text>
+  </div>
+</ion-content>
