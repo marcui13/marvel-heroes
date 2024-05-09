@@ -31,7 +31,7 @@
   
 3. **Correr la aplicación**:
   `ionic serve`
-4. **Estructura del Proyecto**:
+## **Estructura del Proyecto**:
 - src/app/: Contiene los archivos y directorios de la aplicación Angular.
 - src/app/services/marvel-api.service.ts: Servicio que se conecta a la API de Marvel para obtener datos de héroes.
 - src/app/pages/heroes-list/: Página que muestra la lista de héroes.
