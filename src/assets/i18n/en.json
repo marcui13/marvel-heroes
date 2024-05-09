@@ -1,0 +1,9 @@
+{
+    "listaHeroesMarvel": "Marvel Heroes List",
+    "comicsDisponibles": "Available Comics Count:",
+    "seriesDisponibles": "Available Series Count:",
+    "storiesDisponibles": "Available Stories Count:",
+    "cargandoHeroes": "Loading heroes...",
+    "errorCargarDatos": "There was an error loading the data, please try again in a few minutes.",
+    "errorCargarDetalles": "Could not load the hero's details, please try again in a few minutes."
+}

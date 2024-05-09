@@ -1,0 +1,9 @@
+{
+    "listaHeroesMarvel": "Lista de Heroes Marvel",
+    "comicsDisponibles": "Cantidad de Comics disponibles:",
+    "seriesDisponibles": "Cantidad de Series disponibles:",
+    "storiesDisponibles": "Cantidad de Stories disponibles:",
+    "cargandoHeroes": "Cargando héroes...",
+    "errorCargarDatos": "Hubo un error al cargar los datos, por favor intente en unos minutos.",
+    "errorCargarDetalles": "No fue posible cargar los detalles del heroe, por favor intente en unos minutos."
+}
