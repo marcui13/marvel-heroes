@@ -11,6 +11,7 @@
 - Muestra una lista de héroes de Marvel con sus nombres y miniaturas.
 - Permite navegar a los detalles de cada héroe.
 - Muestra información detallada de cada héroe, incluyendo su nombre, imagen, cómics, series y historias disponibles.
+- Traduce los textos según el idioma del dispositivo (inglés / español), utilizando ngx-translate.  
 
 ## Requisitos
 
