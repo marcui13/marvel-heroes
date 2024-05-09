@@ -4,7 +4,7 @@
 
 ## Descripción
 
-`Marvel Heroes App` es una aplicación desarrollada con Ionic 7, Angular y Capacitor que muestra una lista de héroes de Marvel utilizando la API de Marvel. Los usuarios pueden ver una lista de héroes con sus nombres y miniaturas, así como detalles adicionales de cada héroe, como su nombre, imagen, cantidad de cómics, series y historias disponibles.
+`Marvel Heroes App` es una aplicación desarrollada con Ionic 7, Angular y Capacitor que muestra una lista de héroes de Marvel utilizando la [API de Marvel](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0). Los usuarios pueden ver una lista de héroes con sus nombres y miniaturas, así como detalles adicionales de cada héroe, como su nombre, imagen, cantidad de cómics, series y historias disponibles.
 
 ## Características
 
