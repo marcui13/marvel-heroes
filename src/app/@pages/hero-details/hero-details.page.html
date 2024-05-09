@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ hero?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- datos cargados correctamente  -->
+  <div *ngIf="loadedData">
+    <div class="image-container">
+      <ion-img [src]="hero?.thumbnail?.path + '/standard_small.' + hero?.thumbnail?.extension"
+        class="hero-image"></ion-img>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Cantidad de Comics disponibles: {{ hero?.comics?.available }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad de Series disponibles: {{ hero?.series?.available }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad de Stories disponibles: {{ hero?.stories?.available }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- error al cargar los datos  -->
+  <div *ngIf="!loadedData" class="error-text-container">
+    <ion-text class="error-text">
+      No fue posible cargar los detalles del heroe, por favor intente en unos minutos.
+    </ion-text>
+  </div>
+</ion-content>

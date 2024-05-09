@@ -1,0 +1,23 @@
+ion-content {
+    div.image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ion-img.hero-image {
+            height: 300px;
+            width: 300px;
+        }
+    }
+
+    div.error-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        ion-text.error-text {
+            text-align: center;
+        }
+    }
+}
