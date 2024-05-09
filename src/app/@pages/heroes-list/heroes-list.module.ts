@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { HeroesListPageRoutingModule } from './heroes-list-routing.module';
 
 import { HeroesListPage } from './heroes-list.page';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeroesListPageRoutingModule
+    HeroesListPageRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [HeroesListPage]
 })

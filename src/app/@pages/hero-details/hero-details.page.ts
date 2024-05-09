@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import {Location} from '@angular/common';
 // INTERFACES
 import { Hero } from 'src/app/@models/hero.interface';
+// SERVICES
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero-details',
@@ -16,8 +18,8 @@ export class HeroDetailsPage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private location: Location
-  ) { }
+    private location: Location,
+  ) {}
 
   ngOnInit() {
     this.loadHeroDetails();

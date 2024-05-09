@@ -19,13 +19,19 @@
 
     <ion-list>
       <ion-item>
-        <ion-label>Cantidad de Comics disponibles: {{ hero?.comics?.available }}</ion-label>
+        <ion-label>
+          {{ 'comicsDisponibles' | translate }} {{ hero?.comics?.available }}
+        </ion-label>
       </ion-item>
       <ion-item>
-        <ion-label>Cantidad de Series disponibles: {{ hero?.series?.available }}</ion-label>
+        <ion-label>
+          {{ 'seriesDisponibles' | translate }} {{ hero?.series?.available }}
+        </ion-label>
       </ion-item>
       <ion-item>
-        <ion-label>Cantidad de Stories disponibles: {{ hero?.stories?.available }}</ion-label>
+        <ion-label>
+          {{ 'storiesDisponibles' | translate }} {{ hero?.stories?.available }}
+        </ion-label>
       </ion-item>
     </ion-list>
   </div>
@@ -33,7 +39,7 @@
   <!-- error al cargar los datos  -->
   <div *ngIf="!loadedData" class="error-text-container">
     <ion-text class="error-text">
-      No fue posible cargar los detalles del heroe, por favor intente en unos minutos.
+      {{ 'errorCargarDetalles' | translate }}
     </ion-text>
   </div>
 </ion-content>

@@ -4,6 +4,7 @@ import { LoadingController, NavController } from '@ionic/angular';
 // INTERFACES
 import { Hero } from 'src/app/@models/hero.interface';
 // SERVICES
+import { TranslateService } from '@ngx-translate/core';
 import { MarvelApiService } from 'src/app/@services/marvel-api.service';
 
 @Component({
@@ -20,16 +21,19 @@ export class HeroesListPage implements OnInit {
   constructor(
     private marvelApiService: MarvelApiService,
     private navCtrl: NavController,
-    private loadingCtrl: LoadingController
-  ) { }
+    private loadingCtrl: LoadingController,
+    private translate: TranslateService
+  ) {}
   
   ngOnInit() {
     this.getHeroes();
   }
 
   async getHeroes() {
+    const loadingMessage = await this.translate.get('cargandoHeroes').toPromise();
+    
     const loading = await this.loadingCtrl.create({
-        message: 'Cargando héroes...'
+        message: loadingMessage
     });
     await loading.present();
     this.marvelApiService.getHeroes().subscribe(
