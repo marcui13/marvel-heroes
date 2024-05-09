@@ -34,6 +34,9 @@ export class HeroesListPage implements OnInit {
     await loading.present();
     this.marvelApiService.getHeroes().subscribe(
       data => {
+          // no fue necesario limitar a 20 elementos, 
+          // ya que el método GET /v1/public/characters 
+          // viene con el limite de 20 predeterminado
           this.heroes = data;
           loading.dismiss();
           this.loadedData = true;
