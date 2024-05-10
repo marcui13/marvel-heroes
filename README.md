@@ -11,7 +11,21 @@
 - Muestra una lista de héroes de Marvel con sus nombres y miniaturas.
 - Permite navegar a los detalles de cada héroe.
 - Muestra información detallada de cada héroe, incluyendo su nombre, imagen, cómics, series y historias disponibles.
-- Traduce los textos según el idioma del dispositivo (inglés / español), utilizando ngx-translate.  
+- Traduce los textos según el idioma del dispositivo (inglés / español), utilizando ngx-translate.
+
+## Advertencia sobre las claves de API
+
+En este proyecto, las claves de API se encuentran expuestas en el archivo `src/environments/environment.ts`. Esto se hace por razones de simplicidad en este entorno de prueba técnica. **No debe considerarse seguro para un entorno de producción**.
+
+### Prácticas seguras recomendadas
+
+En un entorno de producción, se recomienda:
+
+- **No exponer las claves de API** en los archivos de configuración que se incluyen en el repositorio de Git.
+- **Usar un servidor proxy** para manejar solicitudes a las APIs y proteger las claves.
+- **Almacenar las claves de API** de forma segura utilizando variables de entorno o sistemas de gestión de secretos.
+- **Limitar los permisos de las claves de API** y restringir su uso a direcciones IP específicas si es posible.
+- **Rotar o revocar las claves de API** una vez que se haya completado esta prueba técnica.
 
 ## Requisitos
 
